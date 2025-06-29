@@ -11,6 +11,7 @@ body{
     flex: 1;
 }
 
+
 .navbar{
     height: 5rem;
     background: white;
@@ -129,4 +130,63 @@ font-weight: 400;
 #map { 
     height: 400px;
     width: 80vh;
+}
+
+
+/* changes from here */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+/* media queries */
+/* Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 16px;
+  }
 }
